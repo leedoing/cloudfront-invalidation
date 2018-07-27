@@ -1,8 +1,8 @@
 # cloudfront-invalidation
 ====================================================
 
+## Running Logs
 ```logs
-##Running Logs
 [Started check_invalidation_path]
 test.txt
 [Completed check_invalidation_path]
@@ -22,3 +22,4 @@ Inprogress Invalidation... 40
 {'ResponseMetadata': {'RequestId': '1936c917-9142-11e8-9cd1-4de0061f6e0b', 'HTTPStatusCode': 200, 'HTTPHeaders': {'x-amzn-requestid': '1936c917-9142-11e8-9cd1-4de0061f6e0b', 'content-type': 'text/xml', 'content-length': '365', 'date': 'Fri, 27 Jul 2018 02:09:31 GMT'}, 'RetryAttempts': 0}, 'Invalidation': {'Id': 'I2QDTZQZJSZSFM', 'Status': 'Completed', 'CreateTime': datetime.datetime(2018, 7, 27, 2, 8, 49, 102000, tzinfo=tzutc()), 'InvalidationBatch': {'Paths': {'Quantity': 1, 'Items': ['/test.txt']}, 'CallerReference': '1532704668.0'}}}
 [Completed Check_Invalidation]
 Completed --- 44.67824721336365seconds ---
+```
