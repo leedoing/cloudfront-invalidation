@@ -1,1 +1,1 @@
-"# cloudfront-invalidation" 
+# cloudfront-invalidation
