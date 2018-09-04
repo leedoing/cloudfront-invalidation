@@ -20,7 +20,12 @@ BUCKETNAME = 'cf-prefetch'
 KEY = 'test.txt'
 
 ##Invalidation을 위한 랜덤 해쉬값 생성
-CALLERREFERENCE = str(uuid.uuid4())
+#CALLERREFERENCE = str(uuid.uuid4())
+HASH = random.getrandbits(16)
+NOW = datetime.datetime.now()
+TIMEHASH = time.mktime(NOW.timetuple())
+CALLERREFERENCE = str(HASH+TIMEHASH)
+
 
 ##Path, CF ID 확인(Invalidation 생성 전 체크)
 def check_invalidation_path(distributionId, bucketName, key):
