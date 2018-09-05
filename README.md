@@ -1,4 +1,4 @@
-# cloudfront-invalidation(python v3.3+)
+# cloudfront-invalidation(python v2.6+)
 
 
 ## Running Logs
